@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav id="navBar" class="navbar-white">
+            <a href="index.html"><img src="images/logo-red.png" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="listings.html"> Stays</a></li>
+                <li><a href="house.html" class="active"> Featured Stay</a></li>
+            </ul>
+            <a href="#" class="register-btn"> Book Now</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+        </nav>
+    <!--House Details-->
+    <div class="house-details">
+        <div class="house-title">
+        <h1>Deluxe Queen Room With Ocean View</h1>
+        <div class="row">
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>245 Reviews</span>
+            </div>
+            <div>
+                <p>Location: Tampa, Florida, United States</p>
+            </div>
+        </div>
+    </div>
+    <!--Gallery-->
+    <div class="gallery">
+        <div class="gallery-img-1"><img src="images/house-1.png"></div>
+        <div><img src="images/house-2.png"></div>
+        <div><img src="images/house-3.png"></div>
+        <div><img src="images/house-4.png"></div>
+        <div><img src="images/house-5.png"></div>
+    </div>
+    <div class="small-details">
+        <h2>Entire rental unit hosted by Brandon</h2>
+        <p>2 Guests &nbsp; &nbsp; 2 Beds &nbsp; &nbsp; 1 Bathroom</p>
+        <h4>$112/day</h4>
+    </div>
+
+    <hr class="line">
+    <form class="check-form">
+        <div>
+            <label> Check-in</label>
+            <input type="text" placeholder="Add Date">
+        </div>
+        <div>
+            <label> Check-out</label>
+            <input type="text" placeholder="Add Date">
+        </div>
+        <div class="guest-field">
+            <label> Guest</label>
+            <input type="text" placeholder="Number of Guests">
+        </div>
+        <button type="submit">Check Availability</button>
+
+    </form>
+
+    <ul class="details-list">
+        <li><i class="fa-solid fa-house"></i>Entire Home
+            <span>You will have the entire flat for you</span>
+        </li>
+        <li><i class="fa-solid fa-paint-roller"></i>Enhanced Clean
+            <span>This host has commited to Staybnb's cleaning process</span>
+        </li>
+        <li><i class="fa-solid fa-location-dot"></i>Great Location
+            <span>90% of recent guests love the location</span>
+        </li>
+        <li><i class="fa-solid fa-heart"></i>Great Check-in
+            <span>100% of guests gave the check-in process a 5-star review!</span>
+        </li>
+    </ul>
+    <hr class="line">
+
+    <p class="home-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum labore quisquam maxime fugit quas quod optio saepe id, aperiam aspernatur! Est illo harum dolorum ea labore in optio maxime ipsam.</p>
+    <hr class="line">
+
+    <div class="map">
+        <h3>Location on map</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450940.65496269753!2d-82.7839134926309!3d27.99469592612244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20FL!5e0!3m2!1sen!2sus!4v1707508071070!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <b>Tampa, Florida, United States</b>
+        <p>It's a home away from home</p>
+    </div>
+
+    <hr class="line">
+
+    <div class="host">
+        <img src="images/host.png">
+        <div>
+            <h2>Hosted by Brandon</h2>
+            <p><span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </span> &nbsp; &nbsp; 245 Reviews &nbsp; &nbsp; Response Rate 100% &nbsp; &nbsp; Response time: 60 minutes
+            </p>
+        </div>
+    </div>
+    <a href="#" class="contact-host">Contact Host</a>
+</div>
+
+
+    <!--Footer-->
+    <div class="container">
+    <div class="footer">
+        <a target="_blank" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="https://youtube.com/@cohenthomasthafirst"><i class="fa-brands fa-youtube"></i></a>
+        <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+        <a target="_blank" href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        <hr>
+        <p>Copyright &copy; 2024, Programming Progress</p>
+    </div>
+</div>
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn() {
+        navBar.classList.toggle("hidemenu");
+    }
+
+</script>
+
+<script src="https://kit.fontawesome.com/b87b38c891.js" crossorigin="anonymous"></script>
+</body>
+</html>
